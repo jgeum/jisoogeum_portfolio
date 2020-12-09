@@ -1,0 +1,151 @@
+body {
+
+}
+
+/*Text Properties*/
+
+p {
+
+}
+
+h1 {
+	font-size: 55px;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 1.45;
+}
+
+h1, h2 {
+	font-family: "Palatino Linotype";
+	color: #27272F;
+	overflow: hidden; 
+	margin: 0 auto;
+	white-space: nowrap;
+	text-align: center;
+}
+
+/* Text Emphasis Styling */
+em.green-em {
+	font-style: normal;
+	background-color: #B6EDDA;
+}
+
+/* Nav Bar */
+/* navbar background color */
+.navbar-custom {
+	background-color: #ffffff;
+	box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);
+}
+
+/* brand styling */
+.navbar-custom .navbar-brand {
+	font-family: "Palatino Linotype";
+	margin-left: 30px;
+	font-size: 30px;
+
+}
+
+/* nav item styling */
+.navbar-custom .nav-item {
+	font-family: "Avenir Next";
+	font-weight: 500;
+	margin: 5px 30px 5px 30px;
+}
+
+/* nav item link default color */
+.navbar-light .navbar-nav .nav-item .nav-link {
+ 	color: #27272F;
+}
+
+/* changing the Navbar link colors on hover active focus */
+.navbar-light .navbar-nav .nav-item.active .nav-link,
+.navbar-light .navbar-nav .nav-item:focus .nav-link,
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+    color: #47B58F;
+}
+
+/* Banner Section */
+.banner {
+	margin-top: 250px;
+}
+
+/* Fade In Text Animation*/
+.fade-in {
+	margin-top: 50px; 
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation: fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode: forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+	-webkit-animation-duration: 2s;
+	-moz-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+/*delay a few seconds before fadeing in*/
+.fade-in.delay {
+-webkit-animation-delay: 2s;
+-moz-animation-delay: 2s;
+animation-delay: 2s;
+}
+
+/* Styling "Read more about me" button */
+.banner .about-button {
+	font-family: "Palatino Linotype";
+	font-size: 24px;
+	color: #969696;
+	text-decoration: none;
+}
+
+/* "Read more about me" button float on hover */
+.about-button:hover {
+	-webkit-transform: perspective(8px) translateZ(0);
+	transform: perspective(8px) translateZ(0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.banner.about-button:hover, .banner.about-button:focus, .banner.about-button:active {
+	-webkit-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+
+
+/* Tabs */
+#tab-wrapper {
+	margin: 350px 0px 100px 0px;
+}
+
+/* tab custom style */
+
+.nav-tabs {
+	border: 0;
+}
+
+.nav-tabs .tab-item-custom .tab-link-custom {
+	font-family: "Palatino Linotype";
+	color: #27272F;
+	font-size: 30px;
+	text-decoration: none;
+	padding: 0px 50px 0px 50px;
+}
+
+
+
+
+
