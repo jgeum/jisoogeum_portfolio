@@ -237,15 +237,13 @@ ul#tabs.nav.nav-tabs {
 /*About Page*/
 #profile-img {
 	max-width: 400px;
+	margin-bottom: 40px;
 }
 
 #about-container-custom {
 	margin: 100px 20px 100px 20px;
 }
 
-#profile-img {
-	margin-bottom: 40px;
-}
 
 /*Footer*/
 .footer-custom {
