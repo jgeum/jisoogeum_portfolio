@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Jisoo's Portfolio</title>
-
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="Assets/CSS/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -20,8 +20,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="index.html" class="nav-link">Work</a></li>
+          <li class="nav-item active"><a href="index.html" class="nav-link">Work</a></li>
           <li class="nav-item"><a href="HTML/about.html" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Resume</a></li>
         </ul>
       </div>
     </nav>
@@ -29,21 +30,22 @@
     <!-- container to make everything responsive -->
     <div class="container">
       <!-- Banner Section -->
-      <div class="banner">
-        <h1 class="typewrite" data-period="2000" data-type='[ "I am Jisoo."]'>
+      <div class="banner d-flex flex-column justify-content-center">
+        <h1 class="typewrite" data-period="2000" data-type='[ "I am Jisoo.", "I am a creator."]'>
             <span class="wrap"></span>
         </h1>
 
-        <h2 class="fade-in delay">A <em class="green-em">UX designer</em> with a passion for <em class="green-em">visual storytelling</em>. </br> I enjoy discovering creative solutions to everyday problems.</h2>
+        <h2 class="fade-in delay">A <em class="green-em">UX designer</em> with a passion for <em class="pink-em">visual storytelling</em>. </br> I enjoy discovering creative solutions to everyday problems.
+        </h2>
 
-        <a href="HTML/about.html" class="about-button">Read more about me &#8594;</a>
+        <a href="HTML/about.html" class="about-button fade-in delay">Read more about me &#8594;</a>
       </div>
 
       <!-- Tabs Section -->
       <div id="tab-wrapper">
         <!-- Tabs -->
         <ul role="tablist" id="tabs" class="nav nav-tabs justify-content-center" data-tabs="tabs">
-          <li role="presentation" class="active tab-item-custom">
+          <li role="presentation" class="tab-item-custom active">
             <a role="tab" href="#ux-work" data-toggle="tab" class="tab-link-custom">UX</a>
           </li>
           <li role="presentation" class="tab-item-custom">
@@ -53,34 +55,75 @@
       
         <!-- Tab Content -->
         <div class="tab-content">
-          <div role="tabpanel" class="tab-pane fade in active" id="ux-work"> 
-            UX works 
-            
-          </div>
+          <!-- UX Works -->
+          <div role="tabpanel" class="tab-pane active" id="ux-work"> 
+            <!-- Sentbe -->
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <img src="Assets/img_home/sentbe_tn.png" class="card-img" alt="Sentbe Thumbnail">
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body text-left">
+                    <h6 class="mt-3">2020 SUMMER INTERNSHIP</h6>
+                    <h3 class="mt-3">Sentbe</h3>
+                    <p class="card-text mt-3">International remittance service design</p>
+                    <a href="#" type="button" class="btn-custom mt-3">View Work</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Artie -->
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <img src="Assets/img_home/artie_tn.png" class="card-img" alt="Sentbe Thumbnail">
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body text-left">
+                    <h6 class="mt-3">CASE STUDY</h6>
+                    <h3 class="mt-3">Artie</h3>
+                    <p class="card-text mt-3">Case study for public art & civic engagement </p>
+                    <a href="#" type="button" class="btn-custom mt-3">View Work</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- CJ -->
+            <div class="card">
+              <div class="row no-gutters">
+                <div class="col-md-8">
+                  <img src="Assets/img_home/cj_tn.png" class="card-img" alt="Sentbe Thumbnail">
+                </div>
+                <div class="col-md-4">
+                  <div class="card-body text-left">
+                    <h6 class="mt-3">MOBILE SERVICE DESIGN</h6>
+                    <h3 class="mt-3">Construction Junction</h3>
+                    <p class="card-text mt-3">Mobile app service that promotes furniture reuse and donations</p>
+                    <a href="#" type="button" class="btn-custom mt-3">View Work</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- UX Works Ends-->
 
-          <div role="tabpanel" class="tab-pane fade" id="video-work">
+          <!-- Video Works -->
+          <div role="tabpanel" class="tab-pane" id="video-work">
+
             Video works
-          </div>
 
-        </div>
+          </div> <!-- Video Works Ends -->
+        </div> <!-- Tab Content Ends -->
       </div>
 
       
 
-    </div>
+    </div> <!-- Container Ends -->
     
-    
-
-      
-
-
-
-
-
-
-
-
-
+    <!-- Footer -->
+    <footer class="page-footer footer-custom">
+        <p class="text-center py-3">Developed by Jisoo :)</p>  
+    </footer> <!-- Footer Ends -->
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

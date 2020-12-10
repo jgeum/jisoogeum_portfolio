@@ -29,10 +29,43 @@ h1, h2 {
 	text-align: center;
 }
 
+.card-body h3 {
+	font-family: "Poppins";
+	color: #27272F;
+	font-size: 38px;
+	font-weight: 500;
+	margin: 20px 0px 10px 0px;
+}
+
+
+.card-body h6 {
+	font-family: "Poppins";
+	font-size: 14px;
+	font-weight: 700;
+	color: #ceced6;
+	margin: 10px 0px 10px 0px;
+	letter-spacing: 1px;
+}
+
 /* Text Emphasis Styling */
 em.green-em {
 	font-style: normal;
 	background-color: #B6EDDA;
+}
+
+em.pink-em {
+	font-style: normal;
+	background-color: #F8D7EA;
+}
+
+em.yellow-em {
+	font-style: normal;
+	background-color: #FFFACF;
+}
+
+em.blue-em {
+	font-style: normal;
+	background-color: #B6E0ED;
 }
 
 /* Nav Bar */
@@ -109,6 +142,7 @@ animation-delay: 2s;
 	font-size: 24px;
 	color: #969696;
 	text-decoration: none;
+	text-align: center;
 }
 
 /* "Read more about me" button float on hover */
@@ -121,6 +155,7 @@ animation-delay: 2s;
 	transition-property: transform;
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
+	color: #27272F;
 }
 
 .banner.about-button:hover, .banner.about-button:focus, .banner.about-button:active {
@@ -135,19 +170,69 @@ animation-delay: 2s;
 }
 
 /* tab custom style */
-
-.nav-tabs {
-	border: 0;
-}
-
 .nav-tabs .tab-item-custom .tab-link-custom {
 	font-family: "Palatino Linotype";
-	color: #27272F;
+	color: #969696;
 	font-size: 30px;
 	text-decoration: none;
 	padding: 0px 50px 0px 50px;
 }
 
+/*override default tab style*/
+ul#tabs.nav.nav-tabs {
+    border-bottom: none;
+}
+
+/*tab hovered active or focus*/
+.nav-tabs .tab-item-custom.active .tab-link-custom,
+.nav-tabs .tab-item-custom:hover .tab-link-custom,
+.nav-tabs .tab-item-custom:focus .tab-link-custom {
+	color: #27272F;
+}
+
+/*Top margin above tab content*/
+.tab-content {
+	margin-top: 50px;
+}
+
+.btn-custom {
+	background-color: #27272F;
+	font-family: "Avenir Next";
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+	padding: 10px 40px 10px 40px;
+	border: none;
+	border-radius: 30px;
+	max-width: 200px;
+}
+
+.btn-custom:hover {
+	background-color: #3FC797;
+	text-decoration: none;
+	color: white;
+}
+
+/*card styling */
+.tab-content .tab-pane .card {
+	border: none;
+	box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);
+}
+
+.card {
+	margin-bottom: 40px;
+	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  	cursor: pointer;
+}
+
+.card:hover {
+	transform: scale(1.02);
+  	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.card-body{
+  	margin: 30px;
+}
 
 /*About Page*/
 #profile-img {
@@ -162,3 +247,9 @@ animation-delay: 2s;
 	margin-bottom: 40px;
 }
 
+/*Footer*/
+.footer-custom {
+	background-color: #ffffff;
+	box-shadow: 0px -1px 4px 1px rgba(145, 163, 152, 0.2);
+	height: 80px;
+}
