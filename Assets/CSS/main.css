@@ -37,7 +37,7 @@ h1, h2 {
 }
 
 /* Titles */
-.card-body h3, .block-custom h3 {
+.card-body h3, .block-custom h3, .mb-4 h3{
 	font-family: "Poppins";
 	color: #27272F;
 	font-size: 38px;
