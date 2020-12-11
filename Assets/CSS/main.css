@@ -37,7 +37,7 @@ h1, h2 {
 }
 
 /* Titles */
-.card-body h3 {
+.card-body h3, .container h3 {
 	font-family: "Poppins";
 	color: #27272F;
 	font-size: 38px;
@@ -54,7 +54,7 @@ h1, h2 {
 }
 
 /* Headers */
-.col h4, .block-custom-content h4 {
+.col h4, .block-custom-content h4, .container h4 {
 	font-family: "Poppins";
 	color: #27272F;
 	font-size: 24px;
@@ -262,23 +262,23 @@ ul#tabs.nav.nav-tabs {
 }
 
 /*card styling */
-.tab-content .tab-pane .card {
+.tab-content .tab-pane .card, .col-sm.card {
 	border: none;
 	box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);
 }
 
-.card {
+.card, .container.card {
 	margin-bottom: 40px;
 	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   	cursor: pointer;
 }
 
-.card:hover {
+.card:hover, .container.card {
 	transform: scale(1.02);
   	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
 
-.card-body{
+.card-body, , .container.card-body{
   	margin: 30px;
 }
 
@@ -342,4 +342,9 @@ ul#tabs.nav.nav-tabs {
 .lightbox-hover:hover {
 	transform: scale(1.02);
   	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+.white-block {
+	background-color: white;
+	box-shadow: box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);
 }
