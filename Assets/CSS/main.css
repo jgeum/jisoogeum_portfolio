@@ -2,15 +2,22 @@ body {
 
 }
 
-/*Text Properties*/
+/*Text Styling*/
 
 p {
 	font-family: "Avenir Next";
 	font-weight: 400;
 	font-size: 18px;
 	color: #27272F;
+	line-height: 1.8;
 }
 
+/*600 is medium for Avenir Next*/
+p > b {
+	font-weight: 600;
+}
+
+/* Home Banner Texts */
 h1 {
 	font-size: 55px;
 }
@@ -29,16 +36,39 @@ h1, h2 {
 	text-align: center;
 }
 
-.card-body h3 {
+/* Titles */
+.card-body h3, .block-custom h3 {
 	font-family: "Poppins";
 	color: #27272F;
 	font-size: 38px;
-	font-weight: 500;
+	font-weight: 700; /*700 is bold*/
 	margin: 20px 0px 10px 0px;
 }
 
+/* Headers */
+.col h4, .block-custom-content h4 {
+	font-family: "Poppins";
+	color: #27272F;
+	font-size: 24px;
+	font-weight: 700; /*700 is bold*/
+	letter-spacing: .6px;
+	line-height: 1.5;
+}
 
-.card-body h6 {
+/* Sub-header */
+.col-sm-10 h5 {
+	font-family: "Poppins";
+	color: #27272F;
+	font-size: 22px;
+	font-weight: 700; /*700 is bold*/
+	letter-spacing: .6px;
+	line-height: 1.5;
+	text-align: center;
+	margin: 40px 0px 40px 0px;
+}
+
+/* Grey Small All Cap Texts */
+.card-body h6, .block-custom h6 {
 	font-family: "Poppins";
 	font-size: 14px;
 	font-weight: 700;
@@ -47,10 +77,15 @@ h1, h2 {
 	letter-spacing: 1px;
 }
 
+.white-text {
+	color: white !important;
+}
+
+
 /* Text Emphasis Styling */
 em.green-em {
 	font-style: normal;
-	background-color: #B6EDDA;
+	background-color: #B6EDDA; 
 }
 
 em.pink-em {
@@ -66,6 +101,11 @@ em.yellow-em {
 em.blue-em {
 	font-style: normal;
 	background-color: #B6E0ED;
+}
+
+em.black-em {
+	font-style: normal;
+	background-color: rgba(30, 30, 47, 0.7); ;
 }
 
 /* Nav Bar */
@@ -204,7 +244,7 @@ ul#tabs.nav.nav-tabs {
 	padding: 10px 40px 10px 40px;
 	border: none;
 	border-radius: 30px;
-	max-width: 200px;
+	max-width: 300px;
 }
 
 .btn-custom:hover {
@@ -250,4 +290,48 @@ ul#tabs.nav.nav-tabs {
 	background-color: #ffffff;
 	box-shadow: 0px -1px 4px 1px rgba(145, 163, 152, 0.2);
 	height: 80px;
+}
+
+/*Project Detail Pages*/
+.block-custom {
+	margin-bottom: 150px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.block-custom-content {
+	margin-bottom: 150px;
+}
+
+.des-process-image {
+	background-image: url("../img_artie/desprocess.png");
+	width: 100%;
+}
+
+.pink-blob {
+	padding: 30px 20px;
+	background-color: #F8D7EA;
+	border-radius: 100px;
+}
+
+.blue-blob {
+	padding: 30px 20px;
+	background-color: #B6E0ED;
+	border-radius: 100px;
+}
+
+.green-blob {
+	padding: 30px 20px;
+	background-color: #B6EDDA;
+	border-radius: 100px;
+}
+
+.lightbox-hover {
+	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+}
+
+.lightbox-hover:hover {
+	transform: scale(1.02);
+  	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
