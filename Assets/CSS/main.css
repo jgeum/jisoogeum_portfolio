@@ -20,6 +20,7 @@ p > b {
 /* Home Banner Texts */
 h1 {
 	font-size: 55px;
+	text-align: center;
 }
 
 h2 {
@@ -33,7 +34,6 @@ h1, h2 {
 	overflow: hidden; 
 	margin: 0 auto;
 	white-space: nowrap;
-	text-align: center;
 }
 
 /* Titles */
@@ -155,6 +155,13 @@ em.black-em {
 	margin-top: 250px;
 }
 
+/* Cursor */
+.txt-type > .cursor-effect {
+	border-right: .2rem solid #969696;
+	padding-right: 3px;
+}
+
+
 /* Fade In Text Animation*/
 .fade-in {
 	margin-top: 50px; 
@@ -185,7 +192,7 @@ animation-delay: 2s;
 }
 
 /* Styling "Read more about me" button */
-.banner .about-button {
+.about-button {
 	font-family: "Palatino Linotype";
 	font-size: 24px;
 	color: #969696;
@@ -204,9 +211,10 @@ animation-delay: 2s;
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
 	color: #27272F;
+	text-decoration: none;
 }
 
-.banner.about-button:hover, .banner.about-button:focus, .banner.about-button:active {
+.about-button:hover, .about-button:focus, .about-button:active {
 	-webkit-transform: translateY(-8px);
 	transform: translateY(-8px);
 }
