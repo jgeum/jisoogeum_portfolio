@@ -25,7 +25,7 @@ h1 {
 
 h2 {
 	font-size: 30px;
-	line-height: 1.45;
+	line-height: 1.45 !important;
 }
 
 h1, h2 {
@@ -40,17 +40,19 @@ h1, h2 {
 .card-body h3, .container h3 {
 	font-family: "Poppins";
 	color: #27272F;
-	font-size: 38px;
+	font-size: 32px;
 	font-weight: 700; /*700 is bold*/
 	margin: 20px 0px 10px 0px;
+	line-height: 1.45;
 }
 
 .block-custom h3 {
 	font-family: "Poppins";
 	color: #27272F;
-	font-size: 38px;
+	font-size: 32px;
 	font-weight: 700; /*700 is bold*/
 	margin: 20px 0px 10px 0px;
+	line-height: 1.45;
 }
 
 /* Headers */
@@ -64,7 +66,7 @@ h1, h2 {
 }
 
 /* Sub-header */
-.col-sm-10 h5 {
+.col-sm-10 h5, .container h5 {
 	font-family: "Poppins";
 	color: #27272F;
 	font-size: 22px;
@@ -116,6 +118,15 @@ em.black-em {
 	background-color: rgba(30, 30, 47, 0.7); ;
 }
 
+li {
+	font-family: "Avenir Next";
+	font-weight: 400;
+	font-size: 18px;
+	color: #27272F;
+	line-height: 1.8;
+}
+
+
 /* Nav Bar */
 /* navbar background color */
 .navbar-custom {
@@ -149,6 +160,8 @@ em.black-em {
 .navbar-light .navbar-nav .nav-item:hover .nav-link {
     color: #47B58F;
 }
+
+
 
 /* Banner Section */
 .banner {
@@ -197,7 +210,6 @@ animation-delay: 2s;
 	font-size: 24px;
 	color: #969696;
 	text-decoration: none;
-	text-align: center;
 }
 
 /* "Read more about me" button float on hover */

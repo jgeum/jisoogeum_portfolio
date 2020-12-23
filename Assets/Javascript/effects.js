@@ -1,6 +1,10 @@
+
+// Nav Bar Scroll 
+
+
+
 // Typewriter Animation 
 // Tutorial by https://www.youtube.com/watch?v=POX3dT-pB4E&ab_channel=TraversyMedia
-
 
 //txtElement is the span tag in html, wait is the wait time before deleting
 const Typewriter = function(txtElement, words, wait = 3000) {
@@ -82,3 +86,4 @@ function init() {
 	// Initialize typewriter
 	new Typewriter(txtElement, words, wait);
 }
+
