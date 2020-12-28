@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 
 }
@@ -19,11 +23,11 @@ p > b {
 
 /* Home Banner Texts */
 .banner h1 {
-	font-size: 45px;
+	font-size: 32px;
 }
 
 .banner h2 {
-	font-size: 35px;
+	font-size: 26px;
 	line-height: 1.45;
 }
 
@@ -38,26 +42,26 @@ p > b {
 
 /* Titles */
 .card-body h3, .container h3 {
-	font-family: "Poppins";
+	font-family: "Chivo";
 	color: #27272F;
 	font-size: 32px;
-	font-weight: 700; /*700 is bold*/
+	font-weight: 400;
 	margin: 20px 0px 10px 0px;
 	line-height: 1.45;
 }
 
 .block-custom h3 {
-	font-family: "Poppins";
+	font-family: "Chivo";
 	color: #27272F;
 	font-size: 32px;
-	font-weight: 700; /*700 is bold*/
+	font-weight: 400; 
 	margin: 20px 0px 10px 0px;
 	line-height: 1.45;
 }
 
 /* Headers */
 .col h4, .block-custom-content h4, .container h4 {
-	font-family: "Poppins";
+	font-family: "Chivo";
 	color: #27272F;
 	font-size: 24px;
 	font-weight: 700; /*700 is bold*/
@@ -67,7 +71,7 @@ p > b {
 
 /* Sub-header */
 .col-sm-10 h5, .container h5 {
-	font-family: "Poppins";
+	font-family: "Chivo";
 	color: #27272F;
 	font-size: 22px;
 	font-weight: 700; /*700 is bold*/
@@ -79,9 +83,9 @@ p > b {
 
 /* Grey Small All Cap Texts */
 .card-body h6, .block-custom h6 {
-	font-family: "Poppins";
+	font-family: "Chivo";
 	font-size: 14px;
-	font-weight: 700;
+	font-weight: 400;
 	color: #ceced6;
 	margin: 10px 0px 10px 0px;
 	letter-spacing: 1px;
@@ -95,7 +99,8 @@ p > b {
 /* Text Emphasis Styling */
 em.green-em {
 	font-style: normal;
-	background-color: #B6EDDA; 
+	/*background-color: #B6EDDA; */
+	color: #3FC797;
 }
 
 em.pink-em {
@@ -108,9 +113,15 @@ em.yellow-em {
 	background-color: #FFFACF;
 }
 
+em.orange-em {
+	font-style: normal;
+	color: #E89160;
+}
+
 em.blue-em {
 	font-style: normal;
-	background-color: #B6E0ED;
+	/*background-color: #B6E0ED;*/
+	color: #62AAFF;
 }
 
 em.black-em {
@@ -118,11 +129,15 @@ em.black-em {
 	background-color: rgba(30, 30, 47, 0.7); ;
 }
 
+em.red-em {
+	font-style: normal;
+	color: #E86065;
+}
+
 li {
 	font-family: "Chivo";
-	font-weight: 400;
-	font-size: 18px;
-	color: #27272F;
+	font-weight: 400 !important;
+	font-size: 16px;
 	line-height: 1.8;
 }
 
@@ -131,43 +146,48 @@ li {
 /* navbar background color */
 .navbar-custom {
 	background-color: #ffffff;
-	/*box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);*/
-	border-bottom: 0.5px solid rgba(145, 163, 152, 0.2);
+	border-bottom: 0.5px solid #E8E8E8;
+	height: 60px;
 }
 
-/* brand styling */
+/* logo */
 .navbar-custom .navbar-brand {
-	font-family: "Chivo";
-	font-weight: 300;
-	margin-left: 30px;
-	font-size: 30px;
-
+	font-size: 18px;
 }
 
-/* nav item styling */
+/* nav items styling */
 .navbar-custom .nav-item {
 	font-family: "Chivo";
 	font-weight: 300;
-	margin: 0px 30px 0px 30px;
+	margin: 10px 30px 10px 30px;
+}
+
+.navbar-nav.navbar-center {
+	position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
 }
 
 /* nav item link default color */
 .navbar-light .navbar-nav .nav-item .nav-link {
- 	color: #27272F;
+ 	color: #B5B5B5;
 }
 
 /* changing the Navbar link colors on hover active focus */
 .navbar-light .navbar-nav .nav-item.active .nav-link,
 .navbar-light .navbar-nav .nav-item:focus .nav-link,
 .navbar-light .navbar-nav .nav-item:hover .nav-link {
-    color: #47B58F;
+    color: #27272F;
 }
 
 
 
 /* Banner Section */
 .banner {
-	margin-top: 250px;
+	height: 90vh;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Cursor */
@@ -179,7 +199,6 @@ li {
 
 /* Fade In Text Animation*/
 .fade-in {
-	margin-top: 50px; 
 	opacity:0;  /* make things invisible upon start */
 	-webkit-animation: fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
 	-moz-animation: fadeIn ease-in 1;
@@ -206,34 +225,43 @@ li {
 animation-delay: 2s;
 }
 
-/* Styling "Read more about me" button */
-.about-button {
-	font-family: "Chivo";
-	font-weight: 300;
-	font-size: 24px;
-	color: #969696;
-	text-decoration: none;
+.workindicator {
+	position: absolute;
+	margin-top: 80vh;
 }
 
-/* "Read more about me" button float on hover */
-.about-button:hover {
-	-webkit-transform: perspective(8px) translateZ(0);
-	transform: perspective(8px) translateZ(0);
-	-webkit-transition-duration: 0.3s;
+.jump-button {
+	font-family: "Chivo";
+	font-weight: 300;
+	font-size: 18px;
+	color: #B5B5B5;
+}
+
+/* Styling contact info buttons */
+.contacts-button {
+	font-family: "Chivo";
+	font-weight: 300;
+	font-size: 18px;
+}
+
+a.floathover {
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);
+  	transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
 	-webkit-transition-property: transform;
 	transition-property: transform;
 	-webkit-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
-	color: #27272F;
-	text-decoration: none;
 }
 
-.about-button:hover, .about-button:focus, .about-button:active {
-	-webkit-transform: translateY(-8px);
-	transform: translateY(-8px);
+a.floathover:hover {
+	cursor:pointer;
+    -webkit-transform: translateY(-8px);
+  	transform: translateY(-8px);
+  	text-decoration: none;
 }
-
 
 /* Tabs */
 #tab-wrapper {
@@ -242,7 +270,8 @@ animation-delay: 2s;
 
 /* tab custom style */
 .nav-tabs .tab-item-custom .tab-link-custom {
-	font-family: "Palatino Linotype";
+	font-family: "Chivo";
+	font-weight: 400;
 	color: #969696;
 	font-size: 30px;
 	text-decoration: none;
@@ -268,7 +297,7 @@ ul#tabs.nav.nav-tabs {
 
 .btn-custom {
 	background-color: #27272F;
-	font-family: "Avenir Next";
+	font-family: "Chivo";
 	font-size: 16px;
 	font-weight: 500;
 	color: white;
@@ -320,7 +349,7 @@ ul#tabs.nav.nav-tabs {
 .footer-custom {
 	background-color: #ffffff;
 	/*box-shadow: 0px -1px 4px 1px rgba(145, 163, 152, 0.2);*/
-	border-top: 0.5px solid rgba(145, 163, 152, 0.2);
+	border-top: 0.5px solid #E8E8E8;
 	height: 80px;
 }
 
