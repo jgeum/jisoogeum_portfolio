@@ -17,17 +17,17 @@
   </head>
 
   <body>
-    <!-- Nav Bar Section-->
+    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-sm navbar-custom navbar-light">
-      <a class="navbar-brand" href="../index.html">Jisoo</a>
+      <!-- <a class="navbar-brand" href="index.html">Jisoo</a> -->
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="../index.html" class="nav-link">Work</a></li>
-          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="../Assets/img_resume/JisooGeum_Resume.pdf" class="nav-link" target="_blank">Resume</a></li>
+        <ul class="navbar-nav navbar-center ml-auto">
+          <li class="nav-item"><a href="../index.html" class="nav-link">WORK</a></li>
+          <li class="nav-item"><a href="../index.html" class="nav-link navbar-brand">🍜 JISOO</a></li>
+          <li class="nav-item active"><a href="about.html" class="nav-link">ABOUT</a></li>
         </ul>
       </div>
     </nav>
@@ -35,7 +35,7 @@
 
     <!-- Project Banner Image Section -->
     <section> 
-      <img src="../Assets/img_artie/artie_banner.png" class="img-fluid">
+      <img src="../Assets/img_artie/artie_banner.png" class="img-fluid" id="artietop">
     </section>
 
 
@@ -453,44 +453,51 @@
           </div> <!-- Div Right Ends-->
         </div> <!-- Div LR Wrapper Ends -->
       </div>
-    </div> <!-- Final Insights & Takeaways Ends -->
+
+      <!-- Back to top -->
+      <div class="backtotop">
+        <a href = "#artietop" class="floathover" class="floathover"> 
+          <span class="jump-button">Back to top ^</span>
+        </a>
+      </div>
+
+
+    </div> <!-- Final Insights & Takeaways Container Ends -->
+
+
 
 
     <!-- Related Projects -->
     <div class="container mb-5">
       <h4 class="mb-4">Related Projects</h4>
-      <!-- Related Work Cards -->
+
       <div class="card-deck">
 
-        <!-- Sentbe Card Wrapper -->
-        
-          <!-- Sentbe Card -->
-          <div class="card">
-            <img class="card-img-top" src="../Assets/img_home/sentbe_tn.png" alt="Sentbe Thumbnail">
-            <div class="card-body">
-              <h6 class="mt-3">2020 SUMMER INTERNSHIP</h6>
-              <h3 class="mt-3">Sentbe</h3>
-              <p class="card-text mt-3">International remittance service design</p>
-              <a href="sentbe.html" type="button" class="btn-custom mt-3">View Work</a>
+        <div class="card">
+          <a href="sentbe.html">
+            <div class="darken">
+              <img class="card-img-top" src="../Assets/img_home/sentbe_tn.png" alt="Card image" style="opacity: 0.5;border-radius: 8px;">
             </div>
-          </div> <!-- Sentbe Card Ends-->
-        
-
-        <!-- CJ Card Wrapper -->
-       
-          <!-- CJ Card -->
-          <div class="card">
-            <img class="card-img-top" src="../Assets/img_home/cj_tn.png" alt="CJ Thumbnail">
-            <div class="card-body">
-              <h6 class="mt-3">MOBILE SERVICE DESIGN</h6>
-              <h3 class="mt-3">Construction Junction</h3>
-              <p class="card-text mt-3">Mobile app service that promotes furniture reuse and donations</p>
-              <a href="cj.html" type="button" class="btn-custom mt-3">View Work</a>
+            <div class="card-img-overlay">
+              <h4 class="card-title white-text">Sentbe</h4>
+              <p class="white-text">International remittance service design</p>
             </div>
-          </div> <!-- CJ Card Ends-->
-        
+          </a>
+        </div>
 
-      </div> <!-- Related Work Cards Ends-->
+        <div class="card">
+          <a href="cj.html">
+            <div class="darken">
+              <img class="card-img-top" src="../Assets/img_home/cj_tn.png" alt="Card image" style="opacity: 0.5;border-radius: 8px;">
+            </div>
+            <div class="card-img-overlay">
+              <h4 class="card-title white-text">Construction Junction</h4>
+              <p class="white-text">Promoting sustainable housing</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
     </div> <!-- Related Projects Ends-->
 
 

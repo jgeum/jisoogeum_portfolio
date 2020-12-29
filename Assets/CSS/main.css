@@ -64,7 +64,7 @@ p > b {
 	font-family: "Chivo";
 	color: #27272F;
 	font-size: 24px;
-	font-weight: 700; /*700 is bold*/
+	font-weight: 400; 
 	letter-spacing: .6px;
 	line-height: 1.5;
 }
@@ -99,18 +99,17 @@ p > b {
 /* Text Emphasis Styling */
 em.green-em {
 	font-style: normal;
-	/*background-color: #B6EDDA; */
 	color: #3FC797;
 }
 
 em.pink-em {
 	font-style: normal;
-	background-color: #F8D7EA;
+	color: #F37087;
 }
 
 em.yellow-em {
 	font-style: normal;
-	background-color: #FFFACF;
+	color: #DBCB38;
 }
 
 em.orange-em {
@@ -120,7 +119,6 @@ em.orange-em {
 
 em.blue-em {
 	font-style: normal;
-	/*background-color: #B6E0ED;*/
 	color: #62AAFF;
 }
 
@@ -237,6 +235,12 @@ animation-delay: 2s;
 	color: #B5B5B5;
 }
 
+.backtotop {
+	width:100%;
+	height: 100px;
+	text-align: center;
+}
+
 /* Styling contact info buttons */
 .contacts-button {
 	font-family: "Chivo";
@@ -263,37 +267,6 @@ a.floathover:hover {
   	text-decoration: none;
 }
 
-/* Tabs */
-#tab-wrapper {
-	margin: 350px 0px 100px 0px;
-}
-
-/* tab custom style */
-.nav-tabs .tab-item-custom .tab-link-custom {
-	font-family: "Chivo";
-	font-weight: 400;
-	color: #969696;
-	font-size: 30px;
-	text-decoration: none;
-	padding: 0px 50px 0px 50px;
-}
-
-/*override default tab style*/
-ul#tabs.nav.nav-tabs {
-    border-bottom: none;
-}
-
-/*tab hovered active or focus*/
-.nav-tabs .tab-item-custom.active .tab-link-custom,
-.nav-tabs .tab-item-custom:hover .tab-link-custom,
-.nav-tabs .tab-item-custom:focus .tab-link-custom {
-	color: #27272F;
-}
-
-/*Top margin above tab content*/
-.tab-content {
-	margin-top: 50px;
-}
 
 .btn-custom {
 	background-color: #27272F;
@@ -314,24 +287,28 @@ ul#tabs.nav.nav-tabs {
 }
 
 /*card styling */
-.tab-content .tab-pane .card, .col-sm.card {
-	border: none;
-	box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);
-}
 
-.card, .container.card {
-	margin-bottom: 40px;
-	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+div.card {
+	border: none;
+	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),
+		.3s box-shadow,
+		.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   	cursor: pointer;
+
 }
 
 .card:hover, .container.card {
-	transform: scale(1.02);
-  	box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+	transform: scale(1.01);
+	border: none;
 }
 
 .card-body, , .container.card-body{
   	margin: 30px;
+}
+
+div.darken {
+	background-color: black;
+	border-radius: 8px;
 }
 
 /*About Page*/
