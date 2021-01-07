@@ -18,7 +18,7 @@ p {
 
 /*600 is medium for Avenir Next*/
 p > b {
-	font-weight: 600;
+	font-weight: 500;
 }
 
 /* Home Banner Texts */
@@ -40,7 +40,7 @@ p > b {
 	white-space: nowrap;
 }
 
-/* Titles */
+/* Card Titles */
 .card-body h3, .container h3 {
 	font-family: "Chivo";
 	color: #27272F;
@@ -50,41 +50,42 @@ p > b {
 	line-height: 1.45;
 }
 
+/* Indiv Page Title */
 .block-custom h3 {
 	font-family: "Chivo";
 	color: #27272F;
-	font-size: 32px;
+	font-size: 40px;
 	font-weight: 400; 
 	margin: 20px 0px 10px 0px;
 	line-height: 1.45;
 }
 
-/* Headers */
+/* Headers. Phase Indicators */
 .col h4, .block-custom-content h4, .container h4 {
 	font-family: "Chivo";
 	color: #27272F;
-	font-size: 24px;
+	font-size: 25px;
 	font-weight: 400; 
 	letter-spacing: .6px;
 	line-height: 1.5;
 }
 
-/* Sub-header */
+/* Sub-header. The titles for sub contents */
 .col-sm-10 h5, .container h5 {
 	font-family: "Chivo";
 	color: #27272F;
-	font-size: 22px;
-	font-weight: 700; /*700 is bold*/
+	font-size: 30px;
+	font-weight: 500; /*700 is bold*/
 	letter-spacing: .6px;
 	line-height: 1.5;
 	text-align: center;
-	margin: 40px 0px 40px 0px;
+	margin: 40px 0px 10px 0px;
 }
 
 /* Grey Small All Cap Texts */
 .card-body h6, .block-custom h6 {
 	font-family: "Chivo";
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 400;
 	color: #ceced6;
 	margin: 10px 0px 10px 0px;
@@ -182,10 +183,12 @@ li {
 
 /* Banner Section */
 .banner {
-	height: 90vh;
+	height: 85vh;
 	display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+  	justify-content: center;
+
 }
 
 /* Cursor */
