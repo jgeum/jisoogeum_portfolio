@@ -305,7 +305,7 @@ div.card {
 	border: none;
 }
 
-.card-body, , .container.card-body{
+.card-body, .container.card-body{
   	margin: 30px;
 }
 
@@ -379,5 +379,5 @@ div.darken {
 
 .white-block {
 	background-color: white;
-	box-shadow: box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);
+	box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);
 }
