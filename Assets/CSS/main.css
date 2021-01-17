@@ -11,9 +11,10 @@ body {
 p {
 	font-family: "Chivo";
 	font-weight: 300;
-	font-size: 18px;
+	font-size: 17px;
 	color: #27272F;
 	line-height: 1.8;
+	letter-spacing: .25px;
 }
 
 /*600 is medium for Avenir Next*/
@@ -74,21 +75,20 @@ p > b {
 .col-sm-10 h5, .container h5 {
 	font-family: "Chivo";
 	color: #27272F;
-	font-size: 30px;
-	font-weight: 500; /*700 is bold*/
-	letter-spacing: .6px;
+	font-size: 22px;
+	font-weight: 500; 
+	letter-spacing: .4px;
 	line-height: 1.5;
-	text-align: center;
+	/*text-align: center;*/
 	margin: 40px 0px 10px 0px;
 }
 
 /* Grey Small All Cap Texts */
 .card-body h6, .block-custom h6 {
 	font-family: "Chivo";
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 400;
 	color: #ceced6;
-	margin: 10px 0px 10px 0px;
 	letter-spacing: 1px;
 }
 
@@ -297,7 +297,6 @@ div.card {
 		.3s box-shadow,
 		.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   	cursor: pointer;
-
 }
 
 .card:hover, .container.card {
@@ -342,7 +341,7 @@ div.darken {
 }
 
 .block-custom-content {
-	margin-bottom: 150px;
+	/*margin-bottom: 150px;*/
 }
 
 @media only screen and (min-width: 801px) {
@@ -353,7 +352,7 @@ div.darken {
 }
 
 .des-process-image {
-	background-image: url("../img_artie/desprocess.png");
+	background-image: url("../img_colleeg/desprocessgrey.png");
 	width: 100%;
 }
 
