@@ -345,9 +345,11 @@ div.darken {
 	margin-bottom: 150px;
 }
 
-.solution-overview-block {
-	margin-bottom: 150px;
-	height: 31.25em;
+@media only screen and (min-width: 801px) {
+	.solution-overview-block {
+		margin-bottom: 150px;
+		height: 31.25em;
+	}
 }
 
 .des-process-image {
@@ -389,7 +391,7 @@ div.darken {
 
 /* Mobile Styling */
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 800px) {
 	.solution-overview-block {
 		margin-bottom: 150px;
 	}
