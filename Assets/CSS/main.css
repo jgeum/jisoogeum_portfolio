@@ -61,7 +61,7 @@ p > b {
 }
 
 /* Headers. Phase Indicators */
-.col h4, .block-custom-content h4, .container h4 {
+.col h4, .block-custom-content h4, .solution-overview-block h4, .container h4 {
 	font-family: "Chivo";
 	color: #27272F;
 	font-size: 25px;
@@ -345,6 +345,13 @@ div.darken {
 	margin-bottom: 150px;
 }
 
+@media only screen and (min-width: 801px) {
+	.solution-overview-block {
+		margin-bottom: 150px;
+		height: 31.25em;
+	}
+}
+
 .des-process-image {
 	background-image: url("../img_artie/desprocess.png");
 	width: 100%;
@@ -380,4 +387,12 @@ div.darken {
 .white-block {
 	background-color: white;
 	box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);
+}
+
+/* Mobile Styling */
+
+@media only screen and (max-device-width: 800px) {
+	.solution-overview-block {
+		margin-bottom: 150px;
+	}
 }
