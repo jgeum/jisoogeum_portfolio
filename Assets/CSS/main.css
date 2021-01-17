@@ -61,7 +61,7 @@ p > b {
 }
 
 /* Headers. Phase Indicators */
-.col h4, .block-custom-content h4, .container h4 {
+.col h4, .block-custom-content h4, .solution-overview-block h4, .container h4 {
 	font-family: "Chivo";
 	color: #27272F;
 	font-size: 25px;
@@ -343,6 +343,11 @@ div.darken {
 
 .block-custom-content {
 	margin-bottom: 150px;
+}
+
+.solution-overview-block {
+	margin-bottom: 150px;
+	height: 31.25em;
 }
 
 .des-process-image {
