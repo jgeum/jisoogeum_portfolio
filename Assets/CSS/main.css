@@ -386,3 +386,11 @@ div.darken {
 	background-color: white;
 	box-shadow: 0px 1px 4px 1px rgba(145, 163, 152, 0.2);
 }
+
+/* Mobile Styling */
+
+@media only screen and (max-device-width: 480px) {
+	.solution-overview-block {
+		margin-bottom: 150px;
+	}
+}
