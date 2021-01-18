@@ -8,6 +8,10 @@ body {
 
 /*Text Styling*/
 
+a > h3, a>p{
+	text-decoration: none;
+}
+
 p {
 	font-family: "Chivo";
 	font-weight: 300;
@@ -301,6 +305,10 @@ div.card {
 
 .card-body, .container.card-body{
   	margin: 30px;
+}
+
+img.card-img {
+	border-radius: 12px;
 }
 
 div.darken {
