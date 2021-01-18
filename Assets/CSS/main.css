@@ -13,7 +13,7 @@ p {
 	font-weight: 300;
 	font-size: 17px;
 	color: #27272F;
-	line-height: 1.8;
+	line-height: 1.7;
 	letter-spacing: .25px;
 }
 
@@ -45,20 +45,15 @@ p > b {
 .card-body h3, .container h3 {
 	font-family: "Chivo";
 	color: #27272F;
-	font-size: 32px;
+	font-size: 27px;
 	font-weight: 400;
-	margin: 20px 0px 10px 0px;
+	margin: 20px 0px 0px 0px;
 	line-height: 1.45;
 }
 
 /* Indiv Page Title */
-.block-custom h3 {
-	font-family: "Chivo";
-	color: #27272F;
+.project-title h3 {
 	font-size: 40px;
-	font-weight: 400; 
-	margin: 20px 0px 10px 0px;
-	line-height: 1.45;
 }
 
 /* Headers. Phase Indicators */
