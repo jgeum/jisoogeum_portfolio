@@ -28,13 +28,26 @@ p > b {
 
 /* Home Banner Texts */
 .banner h1 {
-	font-size: 32px;
+	font-size: 3vw;
 }
 
 .banner h2 {
-	font-size: 26px;
+	font-size: 2vw;
 	line-height: 1.45;
 }
+
+
+/* If the screen size is 800px wide or less, */
+@media screen and (max-width: 1000px) {
+  .banner h1 {
+		font-size: 32px;
+	}
+
+	.banner h2 {
+		font-size: 26px;
+	}
+}
+
 
 .banner h1, .banner h2 {
 	font-family: "Chivo";
