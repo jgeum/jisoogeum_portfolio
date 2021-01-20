@@ -8,22 +8,20 @@ body {
 
 /*Text Styling*/
 
-a > h3, a>p{
-	text-decoration: none;
-}
-
 p {
-	font-family: "Chivo";
-	font-weight: 300;
+	font-weight: 400; 
 	font-size: 17px;
 	color: #27272F;
 	line-height: 1.7;
-	letter-spacing: .25px;
+	letter-spacing: .4px;
 }
 
 /*600 is medium for Avenir Next*/
 p > b {
-	font-weight: 500;
+	font-weight: 700;
+	/*font-family: "Chivo";*/
+	font-family: 'Archivo', sans-serif;
+
 }
 
 /* Home Banner Texts */
@@ -50,8 +48,9 @@ p > b {
 
 
 .banner h1, .banner h2 {
+	/*font-family: 'Fraunces', serif;*/
 	font-family: "Chivo";
-	font-weight: 300;
+	font-weight: 400;
 	color: #27272F;
 	overflow: hidden; 
 	margin: 0 auto;
@@ -69,26 +68,34 @@ p > b {
 }
 
 /* Indiv Page Title */
-.project-title h3 {
+.project-title {
+	/*font-family: "Chivo";*/
+	font-family: 'Chivo', sans-serif;
+	color: #27272F;
 	font-size: 40px;
+	font-weight: 700;
+	margin-top: 20px;
+
 }
 
 /* Headers. Phase Indicators */
 .col h4, .block-custom-content h4, .solution-overview-block h4, .container h4 {
-	font-family: "Chivo";
+	/*font-family: "Chivo";*/
+	font-family: 'Archivo', sans-serif;
 	color: #27272F;
 	font-size: 25px;
-	font-weight: 400; 
+	font-weight: 700; 
 	letter-spacing: .6px;
 	line-height: 1.5;
 }
 
 /* Sub-header. The titles for sub contents */
 .col-sm-10 h5, .container h5 {
-	font-family: "Chivo";
+	/*font-family: "Chivo";*/
+	font-family: 'Archivo', sans-serif;
 	color: #27272F;
 	font-size: 22px;
-	font-weight: 500; 
+	font-weight: 700; 
 	letter-spacing: .4px;
 	line-height: 1.5;
 	/*text-align: center;*/
@@ -146,9 +153,9 @@ em.red-em {
 }
 
 li {
-	font-family: "Chivo";
+
 	font-weight: 400 !important;
-	font-size: 16px;
+	font-size: 17px;
 	line-height: 1.8;
 }
 

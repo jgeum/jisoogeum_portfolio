@@ -6,11 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>Jisoo's Portfolio</title>
-    <!-- Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    
     <!-- Chivo font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- Fraunces font -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> -->
+
+    <!-- Archivo -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="Assets/CSS/main.css"/>
     <!-- Bootstrap 4.3 CSS -->
@@ -27,7 +35,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar-menu">
         <ul class="navbar-nav navbar-center ml-auto">
-          <li class="nav-item"><a href="#cardrow1" class="nav-link">WORK</a></li>
+          <li class="nav-item"><a href="#works" class="nav-link">WORK</a></li>
           <li class="nav-item active"><a href="index.html" class="nav-link navbar-brand">🍜 JISOO</a></li>
           <li class="nav-item"><a href="HTML/about.html" class="nav-link">ABOUT</a></li>
           <!-- <li class="nav-item"><a href="Assets/img_resume/JisooGeum_Resume.pdf" class="nav-link" target="_blank">Resume</a></li> -->
@@ -77,7 +85,7 @@
 
         <!-- Work indicator -->
         <div class="fade-in delay workindicator">
-          <a href = "#cardrow1" class="floathover" class="floathover"> 
+          <a href = "#works" class="floathover" class="floathover"> 
             <span class="jump-button">View my work &#8595;</span>
           </a>
         </div>
@@ -85,15 +93,19 @@
       </div> <!-- Banner Section Ends-->
 
       <!-- Card Row 1 -->
-      <div class="card-deck mt-5 ">
+      <div class="card-deck mt-5" id="works">
         <!-- Colleeg -->
-        <div class="card mb-5" id="cardrow1">
+        <div class="card mb-5">
           <a style="text-decoration:none" href="HTML/colleeg.html">
             <img src="Assets/img_home/colleeg_tn.png" class="card-img img-fluid" alt="Sentbe Thumbnail">
             <h3 class="mt-2">Colleeg | Responsive Web Design</h3>
             <p>Connecting high school and college students</p>
           </a>
         </div>
+      </div>
+
+      <!-- Car Row 2 -->
+      <div class="card-deck">
 
         <!-- Sentbe -->
         <div class="card mb-5">
@@ -103,10 +115,7 @@
             <p>International remittance service design</p>
           </a>
         </div>
-      </div>
 
-      <!-- Car Row 2 -->
-      <div class="card-deck">
         <!-- Artie -->
         <div class="card mb-5">
           <a style="text-decoration:none" href="HTML/artie.html">
@@ -116,6 +125,13 @@
           </a>
         </div>
 
+      </div>
+
+      
+
+      <!-- Card Row 3 -->
+      <div class="card-deck">
+
         <!-- CJ -->
         <div class="card mb-5">
           <a style="text-decoration:none" href="HTML/cj.html">
@@ -124,10 +140,7 @@
             <p>Promoting sustainable housing</p>
           </a>
         </div>
-      </div>
 
-      <!-- Card Row 3 -->
-      <div class="card-deck">
         <!-- Halloween Modal -->
           <div class="modal fade" id="halloween-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
@@ -150,8 +163,13 @@
             <p>On her first day of school, a girl senses something creepy about her classmates.</p>
           </a>
         </div> <!-- Halloween Card Ends -->
+      </div>
+
+      
 
 
+      <!-- Card Row 4 -->
+      <div class="card-deck">
         <!-- Curve n light Modal -->
           <div class="modal fade" id="curvenlight-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
@@ -173,11 +191,8 @@
             <p>A space blob is lost inside a black hole while looking for his friend.</p>
           </a>
         </div> <!-- Curve n Light Card Ends -->
-      </div>
 
 
-      <!-- Card Row 4 -->
-      <div class="card-deck">
         <!-- Neil Modal -->
         <div class="modal fade" id="neil-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-xl" role="document">
