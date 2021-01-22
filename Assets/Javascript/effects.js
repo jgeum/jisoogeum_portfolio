@@ -41,11 +41,11 @@ Typewriter.prototype.type = function() {
 	this.txtElement.innerHTML = `<span class="cursor-effect">${this.txt}</span>`; // using back ticks
 
 	// Initial type speed
-	let typeSpeed = 150;
+	let typeSpeed = 100;
 	if (this.isDeleting) {
 
 		// Speed gets faster when deleting. 
-		typeSpeed /= 2; // /= means typeSpeed / 2.
+		typeSpeed /= 3; // /= means typeSpeed / 3.
 	}
 
 	// If word is complete, set a short pause at the end.
@@ -65,7 +65,7 @@ Typewriter.prototype.type = function() {
 		this.wordIndex++;
 
 		// Pause before start typing 
-		typeSpeed = 150;
+		typeSpeed = 200;
 	}
 
 
