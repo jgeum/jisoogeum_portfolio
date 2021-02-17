@@ -10,17 +10,19 @@ body {
 
 p {
 	font-weight: 400; 
-	font-size: 17px;
-	color: #27272F;
+	font-family: 'Chivo', sans-serif;
+	font-size: 18px;
+	color: #3B4352;
 	line-height: 1.7;
-	letter-spacing: .4px;
+	letter-spacing: .1px;
 }
 
 /*600 is medium for Avenir Next*/
 p > b {
 	font-weight: 700;
 	/*font-family: "Chivo";*/
-	font-family: 'Archivo', sans-serif;
+	font-family: 'Chivo', sans-serif;
+	color: #000000;
 
 }
 
@@ -50,19 +52,19 @@ p > b {
 .banner h1, .banner h2 {
 	/*font-family: 'Fraunces', serif;*/
 	font-family: "Chivo";
-	font-weight: 300;
-	color: #27272F;
+	font-weight: 400;
+	color: #000000;
 	overflow: hidden; 
 	margin: 0 auto;
 	white-space: nowrap;
 }
 
 /* Card Titles */
-.card-body h3, .container h3 {
+.card-body h3, .card-wrapper h3 {
 	font-family: "Chivo";
-	color: #27272F;
-	font-size: 27px;
-	font-weight: 400;
+	color: #000000;
+	font-size: 28px;
+	font-weight: 700;
 	margin: 20px 0px 0px 0px;
 	line-height: 1.45;
 }
@@ -70,8 +72,8 @@ p > b {
 /* Indiv Page Title */
 .project-title {
 	/*font-family: "Chivo";*/
-	font-family: 'Chivo', sans-serif;
-	color: #27272F;
+	font-family: 'Chivo';
+	color: #000000;
 	font-size: 40px;
 	font-weight: 700;
 	margin-top: 20px;
@@ -81,19 +83,30 @@ p > b {
 /* Headers. Phase Indicators */
 .col h4, .block-custom-content h4, .solution-overview-block h4, .container h4 {
 	/*font-family: "Chivo";*/
-	font-family: 'Archivo', sans-serif;
-	color: #27272F;
+	font-family: 'Chivo';
+	color: #000000;
 	font-size: 25px;
 	font-weight: 700; 
 	letter-spacing: .6px;
 	line-height: 1.5;
 }
 
+.card-wrapper h4 {
+
+	font-family: 'Chivo';
+	color: #000000;
+	font-size: 25px;
+	font-weight: 400; 
+	letter-spacing: .6px;
+	line-height: 1.5;
+
+}
+
 /* Sub-header. The titles for sub contents */
 .col-sm-10 h5, .container h5 {
 	/*font-family: "Chivo";*/
-	font-family: 'Archivo', sans-serif;
-	color: #27272F;
+	font-family: 'Chivo',;
+	color: #000000;
 	font-size: 22px;
 	font-weight: 700; 
 	letter-spacing: .4px;
@@ -102,13 +115,14 @@ p > b {
 	margin: 40px 0px 10px 0px;
 }
 
-/* Grey Small All Cap Texts */
-.card-body h6, .block-custom h6 {
+/* Grey Tags */
+.card-body h6, .card-wrapper h6 {
 	font-family: "Chivo";
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 400;
-	color: #ceced6;
-	letter-spacing: 1px;
+	color: #A2AEBE;
+	letter-spacing: 0px;
+	line-height: 1.5;
 }
 
 .white-text {
@@ -248,6 +262,7 @@ animation-delay: 2s;
 .workindicator {
 	position: absolute;
 	margin-top: 80vh;
+	margin-bottom: 20vh;
 }
 
 .jump-button {
@@ -310,12 +325,19 @@ a.floathover:hover {
 
 /*card styling */
 
+.card-wrapper {
+	margin-right: 10vw;
+	margin-left: 10vw;
+	margin-top: 10vw;
+}
+
 div.card {
 	border: none;
 	transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),
 		.3s box-shadow,
 		.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   	cursor: pointer;
+  	margin-bottom: 15vh;
 }
 
 .card:hover, .container.card {
