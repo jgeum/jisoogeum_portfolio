@@ -166,6 +166,12 @@ em.red-em {
 	color: #E86065;
 }
 
+em.purple-em {
+	font-style: normal;
+	color: #6368E1;
+	font-weight: 700;
+}
+
 li {
 
 	font-weight: 400 !important;
